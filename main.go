@@ -13,6 +13,10 @@ import (
 )
 
 func main() {
+	// 设置默认语言为中文
+	g.I18n().SetLanguage("zh-CN")
+
+	// 连接数据库
 	err := connDb()
 	if err != nil {
 		panic(err)
